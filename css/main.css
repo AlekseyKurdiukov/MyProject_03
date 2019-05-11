@@ -5,28 +5,19 @@
   padding: 0;
 }
 
-table, tr, td {
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-
 body {
-  font-size: 1em;
+  background-color: #000000;
+  background: url("../img/bg_phone.jpg");
+  background-position: center top;
 }
 
-textarea:focus, input:focus{
-outline: none;
-}
+.container {
+  width: 940px;
 
-.blok_size {
-  max-width: 1170px;
-  margin: 0 auto;
 }
 
 .clearfix {
   overflow: hidden;
 }
 
-.min_wid {
-  min-width: 380px;
-}
+/* Стили шапки сайта */
