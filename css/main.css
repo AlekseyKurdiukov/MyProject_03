@@ -9,11 +9,21 @@ body {
   background-color: #000000;
   background: url("../img/bg_phone.jpg");
   background-position: center top;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
-  width: 940px;
-
+  width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .clearfix {
@@ -21,3 +31,58 @@ body {
 }
 
 /* Стили шапки сайта */
+
+.header_main {
+  display: flex;
+  flex-direction: column;
+}
+
+  .header_main__logo {
+    width: 370px;
+    height: 157px;
+    order: 1;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  .header_main__container_wraper {
+    background-color: #000000;
+  }
+
+    .header_main__container_wraper > .container {
+      display: flex;
+    }
+
+    .site_navigation {
+      list-style-type: none;
+      display: flex;
+    }
+
+      .site_navigation a {
+        padding: 25px 20px;
+        display: block;
+        color: #ffffff;
+      }
+
+      .site_navigation a:hover, .site_navigation a:active {
+        background-color: #242424;
+      }
+
+    .user_navigation {
+      background: url("../img/login_strelka.svg") center left no-repeat;
+      background-position: 20px;
+      margin-left: auto;
+    }
+
+      .user_navigation a {
+        padding: 25px 20px 25px 50px;
+        display: block;
+        color: #ffffff;
+      }
+
+      .user_navigation a:hover, .user_navigation a:active {
+        background: #242424 url("../img/login_strelka.svg") center left no-repeat;
+        background-position: 20px;
+      }
+
+/* Блок 1 */
