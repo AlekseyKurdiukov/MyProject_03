@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+a:hover, a:active {
+  transition: all 0.1s;
+}
+
 .container {
   width: 960px;
   padding: 0 10px;
@@ -81,7 +85,7 @@ a {
       }
 
       .user_navigation a:hover, .user_navigation a:active {
-        background: #242424 url("../img/login_strelka.svg") center left no-repeat;
+        background: #242424 url("../img/login_strelka2.svg") center left no-repeat;
         background-position: 20px;
       }
 
