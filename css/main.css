@@ -114,7 +114,7 @@ overflow: hidden;
         height: 18px;
         position: absolute;
         top: 27px;
-        left: 21px;
+        left: 19px;
         background-image: url("../img/login_strelka2.svg");
         background-repeat: no-repeat;
         background-position: 0 0;
@@ -149,7 +149,7 @@ overflow: hidden;
 
    .advantages_main__blok3 h3 {
      font-size: 30px;
-     margin-bottom: 55px;
+     margin-bottom: 65px;
      line-height: 42px;
      position: relative;
    }
@@ -161,7 +161,7 @@ overflow: hidden;
      background-color: #ffffff;
      transform: rotate(45deg);
      position: absolute;
-     top: 50px;
+     top: 57px;
      left: 50%;
      margin-left: -10px;
    }
@@ -256,6 +256,7 @@ overflow: hidden;
         line-height: 24px;
         font-family: "PT Sans Narrow", Arial, sans-serif;
         font-weight: bold;
+        cursor: pointer;
       }
 
       .news_main__galery button:hover, .news_main__galery button:active {
@@ -266,6 +267,7 @@ overflow: hidden;
 
 .news_main2 {
   margin-top: 35px;
+  margin-bottom: 65px;
 }
 
   .news_main2__container_wraper {
@@ -364,6 +366,7 @@ overflow: hidden;
           line-height: 24px;
           font-family: "PT Sans Narrow", Arial, sans-serif;
           font-weight: bold;
+          cursor: pointer;
         }
 
         .news_main2__form input[type="submit"]:hover, .news_main2__form input[type="submit"]:active {
@@ -376,3 +379,107 @@ overflow: hidden;
           font-weight: bold;
           font-size: 14px;
         }
+
+/* footer */
+
+.footer_main {
+  background-color: #222222;
+  background-image: url("../img/footer_phone.png");
+  padding: 60px 0 40px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+  .footer_main > .container {
+    display: flex;
+  }
+
+    .footer_main__adress {
+      width: 380px;
+      margin-right: 20px;
+    }
+
+      .footer_main__adress a {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+    .footer_main__social {
+      width: 143px;
+      text-align: center;
+    }
+
+      .social_wraper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        position: relative;
+      }
+
+        .social__vk, .social__fc, .social__ok {
+          display: block;
+          width: 40px;
+          height: 40px;
+          background-color: #000000;
+        }
+
+        .social__vk::after {
+          content: "";
+          width: 30px;
+          height: 20px;
+          background-image: url("../img/vk.svg");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          position: absolute;
+          top: 14px;
+          left: 6px;
+        }
+
+        .social__vk::after {
+          background-image: url("../img/vk.svg");
+        }
+
+        .social__fc::after {
+          content: "";
+          width: 30px;
+          height: 20px;
+          background-image: url("../img/facebook.svg");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          position: absolute;
+          top: 10px;
+          left: 62px;
+        }
+
+        .social__ok::after {
+          content: "";
+          width: 30px;
+          height: 20px;
+          background-image: url("../img/instagram.svg");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          position: absolute;
+          top: 11px;
+          left: 113px;
+        }
+
+    .footer_main__academy {
+      width: 140px;
+      margin-left: auto;
+      text-align: center;
+    }
+
+      .footer_main__academy a {
+        display: block;
+        box-sizing: border-box;
+        padding: 13px 13px;
+        width: 100%;
+        background-color: #0a0a0a;
+        color: #ffffff;
+        margin-top: 20px;
+      }
+
+      .footer_main__academy a:hover, .footer_main__academy a:active {
+        background-color: #ffffff;
+        color: #000000;
+      }
