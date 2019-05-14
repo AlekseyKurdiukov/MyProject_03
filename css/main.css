@@ -411,56 +411,26 @@ overflow: hidden;
 
       .social_wraper {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 20px;
-        position: relative;
       }
 
-        .social__vk, .social__fc, .social__ok {
-          display: block;
+        .social__item {
+          display: flex;
           width: 40px;
           height: 40px;
+          justify-content: center;
+          align-items: center;
           background-color: #000000;
         }
 
-        .social__vk::after {
-          content: "";
-          width: 30px;
-          height: 20px;
-          background-image: url("../img/vk.svg");
-          background-repeat: no-repeat;
-          background-position: 0 0;
-          position: absolute;
-          top: 14px;
-          left: 6px;
+        .social__item:hover, .social__item:active {
+          background-color: #ffffff;
         }
 
-        .social__vk::after {
-          background-image: url("../img/vk.svg");
-        }
-
-        .social__fc::after {
-          content: "";
-          width: 30px;
-          height: 20px;
-          background-image: url("../img/facebook.svg");
-          background-repeat: no-repeat;
-          background-position: 0 0;
-          position: absolute;
-          top: 10px;
-          left: 62px;
-        }
-
-        .social__ok::after {
-          content: "";
-          width: 30px;
-          height: 20px;
-          background-image: url("../img/instagram.svg");
-          background-repeat: no-repeat;
-          background-position: 0 0;
-          position: absolute;
-          top: 11px;
-          left: 113px;
+        .social__item:hover path, .social__item:active path {
+          fill: #000000;
         }
 
     .footer_main__academy {
