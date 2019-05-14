@@ -6,9 +6,9 @@
 }
 
 body {
-  background-color: #000000;
-  background: url("../img/bg_phone.jpg");
+  background: #000000 url("../img/bg_phone.jpg");
   background-position: center top;
+  background-repeat: no-repeat;
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -104,10 +104,26 @@ overflow: hidden;
       }
 
     .user_navigation {
-      background: url("../img/login_strelka.svg") center left no-repeat;
-      background-position: 20px;
       margin-left: auto;
+      position: relative;
     }
+
+     .user_navigation a::after {
+        content: "";
+        width: 16px;
+        height: 18px;
+        position: absolute;
+        top: 27px;
+        left: 21px;
+        background-image: url("../img/login_strelka2.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        opacity: 0.2;
+     }
+
+     .user_navigation a:hover::after {
+        opacity: 1;
+     }
 
       .user_navigation a {
         padding: 25px 20px 25px 50px;
@@ -116,8 +132,7 @@ overflow: hidden;
       }
 
       .user_navigation a:hover, .user_navigation a:active {
-        background: #242424 url("../img/login_strelka2.svg") center left no-repeat;
-        background-position: 20px;
+        background-color: #242424;
       }
 
 /* Блок 1 */
@@ -134,22 +149,26 @@ overflow: hidden;
 
    .advantages_main__blok3 h3 {
      font-size: 30px;
-     margin-bottom: 10px;
+     margin-bottom: 55px;
      line-height: 42px;
+     position: relative;
+   }
+
+   .advantages_main__blok3 h3::before {
+     content: "";
+     width: 20px;
+     height: 20px;
+     background-color: #ffffff;
+     transform: rotate(45deg);
+     position: absolute;
+     top: 50px;
+     left: 50%;
+     margin-left: -10px;
    }
 
    .advantages_main__blok3 p {
      font-size: 14px;
      line-height: 24px;
-     margin-top: 25px;
-   }
-
-   .rhombus {
-     width: 20px;
-     height: 20px;
-     background-color: #ffffff;
-     transform: rotate(45deg);
-     margin: 0 auto;
    }
 
 /* Блок 2 */
@@ -191,9 +210,8 @@ overflow: hidden;
       }
 
       .news_main__news a {
-        display: block;
-        padding: 13px 0;
-        width: 140px;
+        display: inline-block;
+        padding: 13px 35px;
         background-color: #0a0a0a;
         color: #ffffff;
         text-align: center;
@@ -243,3 +261,118 @@ overflow: hidden;
       .news_main__galery button:hover, .news_main__galery button:active {
         background: #663d15;
       }
+
+/* Блок 3 */
+
+.news_main2 {
+  margin-top: 35px;
+}
+
+  .news_main2__container_wraper {
+    padding: 50px 80px;
+    background-color: #f8f5f2;
+    background: url("../img/phone_blok.png") top left;
+    display: flex;
+    color: #000000;
+  }
+
+    .news_main2__news {
+      width: 390px;
+      background: url("../img/shadow.png") center right no-repeat;
+    }
+
+      .news_main2__news h2 {
+        font-size: 30px;
+        line-height: 42px;
+        margin-bottom: 30px;
+      }
+
+      .news_main2__news p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 30px;
+      }
+
+      .news_main2__news a {
+        display: inline-block;
+        padding: 13px 35px;
+        background-color: #0a0a0a;
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        margin-right: 20px;
+      }
+
+      .news_main2__news a:hover, .news_main__news a:active {
+        background: #663d15;
+      }
+
+    .news_main2__galery {
+      margin-left: auto;
+      width: 300px;
+    }
+
+      .news_main2__galery h2 {
+        font-size: 30px;
+        line-height: 42px;
+        margin-bottom: 30px;
+      }
+
+      .news_main2__galery p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 30px;
+      }
+
+      .news_main2__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+        .news_main2__form label span {
+          position: relative;
+          left: 15px;
+          font-size: 14px;
+          line-height: 24px;
+        }
+
+        .news_main2__form input {
+          border: 2px solid #000000;
+          background: none;
+          padding: 10px 15px;
+          width: 140px;
+          box-sizing: border-box;
+          margin-bottom: 15px;
+          margin-top: 10px;
+        }
+
+        .news_main2__form input:hover, .news_main2__form input:active {
+          border: 2px solid #663d15;
+        }
+
+        .news_main2__form input[type="submit"] {
+          padding: 13px 0;
+          border: 0;
+          width: 100%;
+          background-color: #0a0a0a;
+          color: #ffffff;
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 14px;
+          line-height: 24px;
+          font-family: "PT Sans Narrow", Arial, sans-serif;
+          font-weight: bold;
+        }
+
+        .news_main2__form input[type="submit"]:hover, .news_main2__form input[type="submit"]:active {
+          background-color: #663d15;
+        }
+
+        input[placeholder] {
+          color: rgba (0, 0, 0, 0.7);
+          font-family: "PT Sans Narrow", Arial, sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+        }
