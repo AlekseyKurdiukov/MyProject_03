@@ -91,6 +91,7 @@ overflow: hidden;
     .site_navigation {
       list-style-type: none;
       display: flex;
+      flex-wrap: wrap;
     }
 
       .site_navigation a {
@@ -423,6 +424,7 @@ overflow: hidden;
           justify-content: center;
           align-items: center;
           background-color: #000000;
+          margin-bottom: 10px;
         }
 
         .social__item:hover, .social__item:active {
