@@ -1,0 +1,40 @@
+/* Базовые стили */
+
+body {
+  background: #f8f5f2 url("../img/phone_blok.png");
+}
+
+/* Стили шапки сайта */
+
+.header_main__logo {
+  width: 113px;
+  height: 25px;
+  padding: 0 20px;
+  align-self: center;
+  order: 0;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+  .ppo {
+    border-bottom: 4px solid #ffffff !important;
+    background-color: #000000 !important;
+  }
+
+    .site_navigation a {
+      padding: 25px 20px;
+      border-bottom: 4px solid #000000;
+    }
+
+    .site_navigation a:hover, .site_navigation a:active {
+      border-bottom: 4px solid #242424;
+    }
+
+    .user_navigation a {
+      border-bottom: 4px solid #000000;
+    }
+
+    .user_navigation a:hover, .user_navigation a:active {
+      border-bottom: 4px solid #242424;
+    }
