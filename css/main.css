@@ -35,7 +35,7 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover, a:active, button:hover, button:active, input:hover, input:active {
   transition: all 0.1s;
 }
 
@@ -45,23 +45,19 @@ a:hover, a:active {
   margin: 0 auto;
 }
 
-.clearfix {
-  overflow: hidden;
-}
-
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-padding: 0;
-white-space: nowrap;
-clip-path: inset(100%);
-clip: rect(0 0 0 0);
-overflow: hidden;
+  input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Стили шапки сайта */
@@ -109,6 +105,16 @@ overflow: hidden;
       position: relative;
     }
 
+      .user_navigation a {
+        padding: 25px 20px 25px 50px;
+        display: block;
+        color: #ffffff;
+      }
+
+      .user_navigation a:hover, .user_navigation a:active {
+        background-color: #242424;
+      }
+
      .user_navigation a::after {
         content: "";
         width: 16px;
@@ -125,16 +131,6 @@ overflow: hidden;
      .user_navigation a:hover::after {
         opacity: 1;
      }
-
-      .user_navigation a {
-        padding: 25px 20px 25px 50px;
-        display: block;
-        color: #ffffff;
-      }
-
-      .user_navigation a:hover, .user_navigation a:active {
-        background-color: #242424;
-      }
 
 /* Блок 1 */
 
