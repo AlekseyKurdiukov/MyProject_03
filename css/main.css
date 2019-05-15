@@ -411,6 +411,7 @@ a:hover, a:active, button:hover, button:active, input:hover, input:active {
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 20px;
+        list-style-type: none;
       }
 
         .social__item {
