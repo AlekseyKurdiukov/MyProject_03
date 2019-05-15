@@ -40,3 +40,48 @@ body {
     }
 
 /* Основной контент */
+
+main.container {
+  color: #000000;
+  margin-top: 55px;
+}
+
+  .meta_date h2 {
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .meta_date__menu {
+    list-style-type: none;
+    display: flex;
+  }
+
+    .meta_date__menu a {
+      color: #000000;
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .meta_date__menu a:first-child {
+      padding-left: 0;
+    }
+
+    .meta_date__menu a::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: #000000;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 5px;
+      right: -5px;
+    }
