@@ -58,6 +58,7 @@ main.container {
   .meta_date__menu {
     list-style-type: none;
     display: flex;
+    margin-bottom: 50px;
   }
 
     .meta_date__menu a {
@@ -67,21 +68,115 @@ main.container {
       font-size: 14px;
       line-height: 24px;
       text-transform: uppercase;
+    }
+
+    .meta_date__menu li {
       padding: 0 20px;
       position: relative;
     }
 
-    .meta_date__menu a:first-child {
+    .meta_date__menu li:first-child {
       padding-left: 0;
     }
 
-    .meta_date__menu a::after {
+    .meta_date__menu li:last-child a {
+      color: #aba9a7;
+    }
+
+    .meta_date__menu li::after {
       content: "";
       width: 8px;
       height: 8px;
       background-color: #000000;
       transform: rotate(45deg);
       position: absolute;
-      top: 5px;
-      right: -5px;
+      right: -4px;
+      top: 7px;
     }
+
+    .meta_date__menu li:last-child::after {
+      background-color: none;
+      width: 0;
+    }
+
+  .meta_name {
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+    .meta_name span {
+      position: relative;
+    }
+
+    .meta_name span::after {
+      content: "";
+      width: 150px;
+      height: 2px;
+      background-color: #000000;
+      position: absolute;
+      top: 50%;
+      right: -175px;
+    }
+
+    .meta_name span::before {
+      content: "";
+      width: 150px;
+      height: 2px;
+      background-color: #000000;
+      position: absolute;
+      top: 50%;
+      left: -175px;
+    }
+
+  .meta_wraper {
+    display: flex;
+    flex-direction: column;
+  }
+
+    .pice__list {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between;
+      margin-bottom: 65px;
+    }
+
+      .pice__list h3 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+
+      .pice__list li:first-child {
+        width: 380px;
+      }
+
+      .pice__list li:last-child {
+        width: 460px;
+      }
+
+      .pice__list table {
+        width: 100%;
+        border: 2px solid #000000;
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+
+      .pice__list table td {
+        border: 2px solid #000000;
+        width: 50%;
+        padding: 10px 17px;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+    .meta_wraper__about_us {
+
+    }
+
+      .meta_wraper__about_us h3 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
