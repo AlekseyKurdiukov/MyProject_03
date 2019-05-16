@@ -171,6 +171,30 @@ main.container {
         line-height: 24px;
       }
 
+        .list__brands {
+          list-style-type: none;
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: bold;
+        }
+
+          .list__brands li {
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 20px;
+          }
+
+          .list__brands li::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background-color: #000000;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 8px;
+            left: 0;
+          }
+
     .meta_wraper__about_us {
 
     }
@@ -180,3 +204,18 @@ main.container {
         line-height: 30px;
         margin-bottom: 30px;
       }
+
+      .about_us__wraper {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+        .meta_wraper__about_us p {
+          width: 380px;
+          margin-right: 120px;
+          margin-bottom: 30px;
+        }
+
+        .meta_wraper__about_us p:nth-child(2n) {
+          margin-right: 0;
+        }
