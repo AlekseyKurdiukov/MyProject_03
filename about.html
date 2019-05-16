@@ -7,19 +7,20 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
   <!-- <link rel="stylesheet" href="css/bootstrap.css" type="text/css"> -->
   <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/about.css" type="text/css">
 </head>
 <body>
   <header class="header_main">
     <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
-    <img class="header_main__logo" src="img/index_logo.svg" alt='Барбершоп "Бородинский"'>
     <div class="header_main__container_wraper">
       <div class="container">
+        <a href="index.html" class="header_main__logo"><img src="img/index_logo2.svg" alt='Барбершоп "Бородинский"'></a>
         <ul  class="site_navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="price.html">Прайс-лист</a></li>
           <li><a href="shop.html">Магазин</a></li>
-          <li><a href="about.html">Контакты</a></li>
+          <li><a class="ppo">Контакты</a></li>
         </ul>
         <span class="user_navigation">
           <a href="#">Вход</a>
@@ -27,56 +28,22 @@
       </div>
     </div>
   </header>
-  <main>
-    <section class="advantages_main container">
-      <h2 class="visually-hidden">Наши приемущества</h2>
-      <div class="advantages_main__blok3">
-        <h3>Быстро</h3>
-        <p>
-          Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!
-        </p>
-      </div>
-      <div class="advantages_main__blok3">
-        <h3>Круто</h3>
-        <p>
-          Забудьте, как вы стриглись раньше.<br> Мы сделаем из Вас звезду футбола и кино!<br> Во всяком случае внешне.
-        </p>
-      </div>
-      <div class="advantages_main__blok3">
-        <h3>Дорого</h3>
-        <p>
-          Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
-        </p>
-      </div>
-    </section>
-    <section class="news_main container">
-      <div class="news_main__container_wraper">
-        <article class="news_main__news">
-          <h2>Новости</h2>
-          <p>
-            Нам наконец завезли ягермайстер! Теперь Вы можете <br> пропустить стаканчик во время стрижки
-          </p>
-          <data value="11.01.2011">11 января</data>
-          <p>
-            В нашей команде пополнение, Борис Бритва Стригунец, <br> обладатель множества титулов и наград пополнил наши стройные ряды
-          </p>
-          <data value="18.11.2011">18 января</data>
-          <a href="news.html">Все новости</a>
-        </article>
-        <article class="news_main__galery">
-          <h2>Фотогалерея</h2>
-          <a href="#"><img src="img/layer.jpg" alt="Фотография нашего салона"></a>
-          <div class="galery__wraper">
-            <button type="button" name="button" cursor="pointer">Назад</button>
-            <button type="button" name="button" cursor="pointer">Вперед</button>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section class="news_main2 container">
-      <div class="news_main2__container_wraper">
-        <article class="news_main2__news">
-          <h2>Контактная информация</h2>
+  <main class="container">
+    <div class="meta_date">
+      <h2>Контакты</h2>
+      <ul class="meta_date__menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a>Контакты</a></li>
+      </ul>
+    </div>
+    <div class="meta_name">
+      <span>Контакты</span>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1089.292996149129!2d59.9446640979172!3d56.904484617417616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1557996829582!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      <div class="meta_wraper__about_us">
+        <h3>Контактная информация</h3>
+        <div class="about_us__wraper">
           <p>
             Барбершоп "Бородинский" <br>
             Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8 <br>
@@ -87,32 +54,8 @@
             пн-пт: с 10:00 до 22:00 <br>
             сб-вс: с 10:00 до 19:00
           </p>
-          <a href="news.html">Как проехать</a>
-          <a href="news.html">Обратная связь</a>
-        </article>
-        <article class="news_main2__galery">
-          <h2>Записаться</h2>
-          <p>
-            Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
-          </p>
-          <form class="news_main2__form" action="index.html" method="post">
-            <label><span>Дата</span> <br>
-            <input type="text" name="date" value="" placeholder="08.10.2017">
-            </label>
-            <label><span>Время</span> <br>
-            <input type="text" name="time" value="" placeholder="10:00">
-            </label>
-            <label><span>Имя</span> <br>
-            <input type="text" name="name" value="" placeholder="Борода">
-            </label>
-            <label><span>Телефон</span> <br>
-            <input type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
-            </label>
-            <input type="submit" name="" value="Отправить">
-          </form>
-        </article>
+        </div>
       </div>
-    </section>
   </main>
   <footer class="footer_main">
     <div class="container">
