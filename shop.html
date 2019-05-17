@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
   <!-- <link rel="stylesheet" href="css/bootstrap.css" type="text/css"> -->
   <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link rel="stylesheet" href="css/about.css" type="text/css">
+  <link rel="stylesheet" href="css/shop.css" type="text/css">
 </head>
 <body>
   <header class="header_main">
@@ -19,8 +19,8 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="price.html">Прайс-лист</a></li>
-          <li><a href="shop.html">Магазин</a></li>
-          <li><a class="ppo">Контакты</a></li>
+          <li><a class="ppo">Магазин</a></li>
+          <li><a href="about.html">Контакты</a></li>
         </ul>
         <span class="user_navigation">
           <a href="#">Вход</a>
@@ -30,30 +30,126 @@
   </header>
   <main class="container">
     <div class="meta_date">
-      <h2>Контакты</h2>
+      <h2>Средства для ухода</h2>
       <ul class="meta_date__menu">
         <li><a href="index.html">Главная</a></li>
-        <li>Контакты</li>
+        <li><a href="index.html">Магазин</a></li>
+        <li>Средства для ухода</li>
       </ul>
     </div>
-    <div class="meta_name">
-      Где мы находимся
-    </div>
-    <div class="meta_wraper">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1089.292996149129!2d59.9446640979172!3d56.904484617417616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1557996829582!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      <h3>Несколько слов о нас:</h3>
-      <ul class="meta_wraper__about_us">
-        <li>
-          Барбершоп "Бородинский" <br>
-          Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8 <br>
-          Телефон: +7 (495) 666-02-66
-        </li>
-        <li>
-          Время работы: <br>
-          пн-пт: с 10:00 до 22:00 <br>
-          сб-вс: с 10:00 до 19:00
-        </li>
-      </ul>
+    <div class="shop_wraper">
+      <div class="shop_wraper__form">
+        <form class="form__shop" action="index.html" method="post">
+          <h2>Производители:</h2>
+          <label>
+            <input class="visually-hidden" type="checkbox" name="Baxter of California" value="Baxter of California">
+            <span>Baxter of California</span>
+          </label>
+          <label>
+            <input class="visually-hidden" type="checkbox" name="Baxter of California" value="Baxter of California">
+            <span>Mr Natty</span>
+          </label>
+          <label>
+            <input class="visually-hidden" type="checkbox" name="Baxter of California" value="Baxter of California">
+            <span>Suavecito</span>
+          </label>
+          <label>
+            <input class="visually-hidden" type="checkbox" name="Baxter of California" value="Baxter of California">
+            <span>Malin+Goetz</span>
+          </label>
+          <label>
+            <input class="visually-hidden" type="checkbox" name="Baxter of California" value="Baxter of California">
+            <span>Murray's</span>
+          </label>
+          <label>
+            <input class="visually-hidden" type="checkbox" name="Baxter of California" value="Baxter of California">
+            <span>American Crew</span>
+          </label>
+
+          <h2>Группы товаров</h2>
+          <label>
+            <input type="radio" name="group" value="Бритвенные принадлежности">
+            Бритвенные принадлежности
+          </label>
+          <label>
+            <input type="radio" name="group" value="Средства для ухода">
+            Средства для ухода
+          </label>
+          <label>
+            <input type="radio" name="group" value="Аксесуары">
+            Аксесуары
+          </label>
+          <input type="submit" name="" value="Показать">
+        </form>
+      </div>
+      <div class="shop_wraper__katalog">
+        <div class="katalog__item">
+          <img src="img/layer_1.jpg" alt="Набор для путешествий">
+          <div class="item__text">
+            <h3>
+                Набор для путешествий <br>
+               "Baxter of California"
+            </h3>
+            <span>2 900 р</span>
+            <a href="#">Купить</a>
+          </div>
+        </div>
+        <div class="katalog__item">
+          <img src="img/layer_2.jpg" alt="Набор для путешествий">
+          <div class="item__text">
+            <h3>
+                Увлажняющий колндиционер <br>
+               "Baxter of California"
+            </h3>
+            <span>2 900 р</span>
+            <a href="#">Купить</a>
+          </div>
+        </div>
+        <div class="katalog__item">
+          <img src="img/layer_3.jpg" alt="Набор для путешествий">
+          <div class="item__text">
+            <h3>
+                Гель для волос <br>
+               "Suavecito"
+            </h3>
+            <span>2 900 р</span>
+            <a href="#">Купить</a>
+          </div>
+        </div>
+        <div class="katalog__item">
+          <img src="img/layer_4.jpg" alt="Набор для путешествий">
+          <div class="item__text">
+            <h3>
+                Глина для укладки волос <br>
+               "American Crew"
+            </h3>
+            <span>2 900 р</span>
+            <a href="#">Купить</a>
+          </div>
+        </div>
+        <div class="katalog__item">
+          <img src="img/layer_5.jpg" alt="Набор для путешествий">
+          <div class="item__text">
+            <h3>
+                Гель для волос <br>
+               "American Crew"
+            </h3>
+            <span>2 900 р</span>
+            <a href="#">Купить</a>
+          </div>
+        </div>
+        <div class="katalog__item">
+          <img src="img/layer_6.jpg" alt="Набор для путешествий">
+          <div class="item__text">
+            <h3>
+                Набор для бритья <br>
+               "Baxter of California"
+            </h3>
+            <span>2 900 р</span>
+            <a href="#">Купить</a>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <footer class="footer_main">
