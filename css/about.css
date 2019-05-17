@@ -18,25 +18,21 @@ body {
 }
 
   .ppo {
-    border-bottom: 4px solid #ffffff !important;
     background-color: #000000 !important;
   }
 
+  a.ppo::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
     .site_navigation a {
-      padding: 25px 20px;
-      border-bottom: 4px solid #000000;
-    }
-
-    .site_navigation a:hover, .site_navigation a:active {
-      border-bottom: 4px solid #242424;
-    }
-
-    .user_navigation a {
-      border-bottom: 4px solid #000000;
-    }
-
-    .user_navigation a:hover, .user_navigation a:active {
-      border-bottom: 4px solid #242424;
+      position: relative;
     }
 
 /* Основной контент */
@@ -95,33 +91,27 @@ main.container {
   .meta_name {
     font-size: 48px;
     line-height: 48px;
-    text-align: center;
     margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
-
-    .meta_name span {
-      position: relative;
+    .meta_name::after {
+      content: "";
+      width: 150px;
+      height: 2px;
+      background-color: #000000;
+      margin-left: 25px;
     }
 
-      .meta_name span::after {
-        content: "";
-        width: 150px;
-        height: 2px;
-        background-color: #000000;
-        position: absolute;
-        top: 50%;
-        right: -175px;
-      }
-
-      .meta_name span::before {
-        content: "";
-        width: 150px;
-        height: 2px;
-        background-color: #000000;
-        position: absolute;
-        top: 50%;
-        left: -175px;
-      }
+    .meta_name::before {
+      content: "";
+      width: 150px;
+      height: 2px;
+      background-color: #000000;
+      margin-right: 25px;
+    }
 
   .meta_wraper__about_us {
     display: flex;
