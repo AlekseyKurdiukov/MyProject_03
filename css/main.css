@@ -452,3 +452,216 @@ a:hover, a:active, button:hover, button:active, input:hover, input:active {
         background-color: #ffffff;
         color: #000000;
       }
+
+/* Модальное окно 1 */
+
+.modal_login {
+  width: 460px;
+  color: #000000;
+  padding: 60px 80px;
+  box-sizing: border-box;
+  background-color: #f8f5f2;
+  background: url("../img/phone_blok.png") top left;
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  margin-left: -230px;
+  display: none;
+  box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.75);
+}
+
+  .modal_login h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .modal_login p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .modal_login a {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .flex_wraper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal_login input {
+    border: 2px solid #000000;
+    background: none;
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+
+    .modal_login input[placeholder] {
+      color: #000000;
+      text-transform: uppercase;
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+  .modal_login input:hover, .modal_login input:active {
+    border: 2px solid #663d15;
+  }
+
+  .modal_login input[type="submit"] {
+    padding: 13px 0;
+    border: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .modal_login input[type="submit"]:hover, .modal_login input[type="submit"]:active {
+    background-color: #663d15;
+  }
+
+  .modal_login label {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  .modal_login label::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -12px;
+  }
+
+  .modal_login span {
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 43px;
+    position: relative;
+  }
+
+  .modal_login span::before {
+    content: "";
+    width: 12px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    margin-top: -1px;
+    display: none;
+  }
+
+  .modal_login span::after {
+    content: "";
+    width: 12px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    margin-top: -1px;
+    display: none;
+  }
+
+  input[type="checkbox"]:checked + span::before, input:checked + span::after {
+    display: inline;
+  }
+
+.btn_close {
+  border: 0;
+  height: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 2px;
+}
+
+.btn_close::before {
+  content: "";
+  width: 25px;
+  height: 5px;
+  background-color: #d0d0d0;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 20px;
+  right: -40px;
+}
+
+.btn_close::after {
+  content: "";
+  width: 25px;
+  height: 5px;
+  background-color: #d0d0d0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 20px;
+  right: -40px;
+}
+
+/* Модальное окно 2 */
+
+.modal_map {
+  width: 780px;
+  height: 576px;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  margin-left: -390px;
+  box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.75);
+  display: none;
+}
+
+.btn_map_close {
+  border: 0;
+  height: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 2px;
+}
+
+.btn_map_close::before {
+  content: "";
+  width: 25px;
+  height: 5px;
+  background-color: #d0d0d0;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 20px;
+  right: -40px;
+}
+
+.btn_map_close::after {
+  content: "";
+  width: 25px;
+  height: 5px;
+  background-color: #d0d0d0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 20px;
+  right: -40px;
+}
+
+.modal_show {
+  display: block;
+}
