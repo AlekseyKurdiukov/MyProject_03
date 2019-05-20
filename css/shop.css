@@ -174,9 +174,63 @@ main.container {
           display: none;
         }
 
-        input[type="checkbox"]:checked + span::before, input:checked + span::after {
+        input[type="checkbox"]:checked + span::before, input[type="checkbox"]:checked + span::after {
           display: inline;
         }
+
+      .rabio {
+        display: block;
+        position: relative;
+        margin-bottom: 17px;
+      }
+
+        .rabio::before {
+          content: "";
+          width: 20px;
+          height: 20px;
+          border-radius: 20px;
+          border: 2px solid #000000;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          margin-top: -12px;
+        }
+
+        .rabio span::after {
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+          background-color: #000000;
+          position: absolute;
+          left: 7px;
+          top: 50%;
+          margin-top: -6px;
+          display: none;
+        }
+
+        input[type="radio"]:checked + span::after {
+          display: inline;
+        }
+
+    input[type="submit"] {
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 13px 33px;
+      background-color: #0a0a0a;
+      color: #ffffff;
+      border: 0;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover, input[type="submit"]:active  {
+      background-color: #663d15;
+    }
 
     .shop_wraper__katalog {
       width: 700px;
