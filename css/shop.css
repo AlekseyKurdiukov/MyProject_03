@@ -223,6 +223,11 @@ main.container {
           display: inline;
         }
 
+        label input:disabled + span {
+          opacity: 0.3;
+          color: #000000 !important;
+        }
+
     input[type="submit"] {
       display: inline-block;
       box-sizing: border-box;
