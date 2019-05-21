@@ -184,6 +184,10 @@ main.container {
           display: inline;
         }
 
+        .form__shop label:hover > span {
+          color: #663d15;
+        }
+
       .rabio {
         display: block;
         position: relative;
@@ -306,18 +310,21 @@ main.container {
         .katalog__btn a {
           width: 43px;
           height: 43px;
-          text-align: center;
-          align-self: center;
+          display: flex;
           background-color: #000000;
           color: #ffffff;
           margin-right: 7px;
+        }
+
+        .katalog__btn span {
+          margin: auto;
         }
 
         .katalog__btn a:hover, .katalog__btn a:active {
           background-color: #663d15;
         }
 
-      .katalog__btn .katalog__btn_active {
+      .katalog__btn_active {
         background-color: #ffffff !important;
         color: #000000 !important;
       }
@@ -327,4 +334,34 @@ main.container {
 .footer_main {
   box-shadow: inset 0 15px 20px 0 rgba(0, 0, 0, 0.5);
   margin-top: 50px;;
+}
+
+/* Класс всплытия */
+
+.modal_show {
+  display: block;
+}
+
+/* Анимация */
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.modal_error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+@keyframes show {
+  0% { transform: translateY(-2000px); }
+  50% { transform: translateY(20px); }
+  100% { transform: translateY(0); }
+}
+
+.modal_spull {
+  animation-name: show;
+  animation-duration: 0.6s;
 }

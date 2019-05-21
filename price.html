@@ -23,7 +23,7 @@
           <li><a href="about.html">Контакты</a></li>
         </ul>
         <span class="user_navigation">
-          <a href="#">Вход</a>
+          <a class="login_link" href="#">Вход</a>
         </span>
       </nav>
     </div>
@@ -118,6 +118,34 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal_login">
+    <h2>Личный кабинет</h2>
+    <p>Введите пожалуйста свой логин и пароль</p>
+    <form class="modal_form" action="index.html" method="post">
+      <label class="visually-hidden" for="login">Логин</label>
+      <input id="login" type="text" name="login" value="" placeholder="Логин">
+      <label class="visually-hidden" for="password">Пароль</label>
+      <input id="password" type="password" name="password" value="" placeholder="Пароль">
+      <div class="flex_wraper">
+        <label>
+          <input class="visually-hidden" type="checkbox" name="remember" value="remember">
+          <span>Запомнить меня</span>
+        </label>
+        <a href="#">Я забыл пароль!</a>
+      </div>
+      <input type="submit" name="Я забыл пароль" value="Войти">
+    </form>
+    <button class="btn_close" type="button" name="button"></button>
+  </div>
+  <div class="modal_map">
+    <h2 class="visually-hidden">Где мы находимся</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1089.292996149129!2d59.9446640979172!3d56.904484617417616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1557996829582!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <button class="btn_map_close" type="button" name="button"></button>
+  </div>
+
+  <script src="js/show.js"></script>
+  <script src="js/show_map.js"></script>
 
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
