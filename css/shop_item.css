@@ -120,10 +120,6 @@ main.container {
       width: 460px;
     }
 
-    .shop_item2 {
-      width: 390px;
-    }
-
       .img_item {
         display: flex;
         justify-content: space-between;
@@ -144,26 +140,35 @@ main.container {
             box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
           }
 
-          .img_item__logo img {
-            width: 100%;
-            height: 500px;
-            padding: 5px;
-            box-sizing: border-box;
-            background-color: #ffffff;
-          }
+        .img_item__logo img {
+          width: 100%;
+          height: 500px;
+          padding: 5px;
+          box-sizing: border-box;
+          background-color: #ffffff;
+        }
 
-    .dostupno {
-      font-size: 14px;
-      line-height: 24px;
-      margin-bottom: 40px;
+    .shop_item2 {
+      width: 390px;
     }
 
-    .artikul {
-      font-size: 14px;
-      line-height: 24px;
-      float: right;
-      color: #aeaeae;
-    }
+      .shop_item2 h2 {
+        margin-top: 60px;
+        margin-bottom: 30px;
+      }
+
+      .dostupno {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 40px;
+      }
+
+      .artikul {
+        font-size: 14px;
+        line-height: 24px;
+        float: right;
+        color: #aeaeae;
+      }
 
       .shop_item2 p {
         font-size: 14px;
@@ -171,54 +176,52 @@ main.container {
         margin-bottom: 40px;
       }
 
-    .item__btn span {
-      background-color: #e5e5e5;
-      padding: 15px 37px;
-      font-size: 14px;
-      line-height: 18px;
-    }
-
-    .item__btn a {
-      display: inline-block;
-      font-size: 14px;
-      padding: 15px 25px;
-      line-height: 18px;
-      color: #ffffff;
-      background-color: #000000;
-      text-align: center;
-    }
-
-    .item__btn a:hover, .item__btn a:active {
-      background-color: #663d15;
-    }
-
-    .list__brands {
-      list-style-type: none;
-      font-size: 14px;
-      line-height: 24px;
-    }
-
-      .list__brands li {
-        padding-left: 20px;
-        position: relative;
+      .item__btn {
+        font-size: 0em;
       }
 
-      .list__brands li::before {
-        content: "";
-        width: 8px;
-        height: 8px;
-        background-color: #000000;
-        transform: rotate(45deg);
-        position: absolute;
-        top: 8px;
-        left: 0;
+        .item__btn span {
+          background-color: #e5e5e5;
+          padding: 15px 37px;
+          font-size: 14px;
+          line-height: 18px;
+        }
+
+        .item__btn a {
+          display: inline-block;
+          font-size: 14px;
+          padding: 15px 25px;
+          line-height: 18px;
+          color: #ffffff;
+          background-color: #000000;
+          text-align: center;
+        }
+
+        .item__btn a:hover, .item__btn a:active {
+          background-color: #663d15;
+        }
+
+      .list__brands {
+        list-style-type: none;
+        font-size: 14px;
+        line-height: 24px;
       }
 
-    .shop_item2 h2 {
-      margin-top: 60px;
-      margin-bottom: 30px;
-    }
+        .list__brands li {
+          padding-left: 20px;
+          position: relative;
+        }
 
+          .list__brands li::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background-color: #000000;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 8px;
+            left: 0;
+          }
 
 /* Подвал */
 
